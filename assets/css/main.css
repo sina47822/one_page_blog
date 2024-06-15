@@ -5,7 +5,7 @@ html{
 
 .item-1 {
   height: 100vh;
-  background-image: url("/assets/media/blog/01.06.2024/IMG_1186.JPG");
+  background-image: url("assets/media/blog/01.06.2024/IMG_1186.JPG");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -13,7 +13,7 @@ html{
 }
 .item-2 {
   height: 100vh;
-  background-image: url("/assets/media/blog/01.06.2024/IMG_1187.JPG");
+  background-image: url("assets/media/blog/01.06.2024/IMG_1187.JPG");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -22,7 +22,7 @@ html{
 }
 .item-3 {
   height: 100vh;
-  background-image: url("/assets/media/blog/01.06.2024/IMG_1188.JPG");
+  background-image: url("assets/media/blog/01.06.2024/IMG_1188.JPG");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -31,7 +31,7 @@ html{
 }
 .item-4 {
   height: 100vh;
-  background-image: url("/assets/media/blog/01.06.2024/IMG_1189.JPG");
+  background-image: url("assets/media/blog/01.06.2024/IMG_1189.JPG");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -40,7 +40,7 @@ html{
 }
 .item-5 {
   height: 100vh;
-  background-image: url("/assets/media/blog/01.06.2024/IMG_1190.JPG");
+  background-image: url("assets/media/blog/01.06.2024/IMG_1190.JPG");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -49,7 +49,7 @@ html{
 }
 .item-6 {
   height: 100vh;
-  background-image: url("/assets/media/blog/01.06.2024/IMG_1191.JPG");
+  background-image: url("assets/media/blog/01.06.2024/IMG_1191.JPG");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -58,7 +58,7 @@ html{
 }
 .item-7 {
   height: 100vh;
-  background-image: url("/assets/media/blog/01.06.2024/IMG_1192.JPG");
+  background-image: url("assets/media/blog/01.06.2024/IMG_1192.JPG");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -66,7 +66,7 @@ html{
 }
 .item-8 {
   height: 100vh;
-  background-image: url("/assets/media/blog/01.06.2024/IMG_1193.JPG");
+  background-image: url("assets/media/blog/01.06.2024/IMG_1193.JPG");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
