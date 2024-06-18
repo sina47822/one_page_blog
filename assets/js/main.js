@@ -139,3 +139,35 @@ document.querySelector('.p_btn_8').addEventListener('click', function () {
   h = (h - 1 + texts_8.length) % texts_8.length;
   texts_8[h].classList.remove('hide');
 });
+
+// item 9
+const texts_9 = document.querySelectorAll('.texts_9 > p');
+let i = 0;
+console.log(i , texts_9)
+document.querySelector('.n_btn_9').addEventListener('click', function () {
+  texts_9[i].classList.add('hide');
+  i = (i + 1) % texts_9.length;
+  texts_9[i].classList.remove('hide');
+});
+
+document.querySelector('.p_btn_9').addEventListener('click', function () {
+  texts_9[i].classList.add('hide');
+  i = (i - 1 + texts_9.length) % texts_9.length;
+  texts_9[i].classList.remove('hide');
+});
+
+// item 10
+const texts_10 = document.querySelectorAll('.texts_10 > p');
+let j = 0;
+console.log(j , texts_10)
+document.querySelector('.n_btn_10').addEventListener('click', function () {
+  texts_10[j].classList.add('hide');
+  j = (j + 1) % texts_10.length;
+  texts_10[j].classList.remove('hide');
+});
+
+document.querySelector('.p_btn_10').addEventListener('click', function () {
+  texts_10[j].classList.add('hide');
+  j = (j - 1 + texts_10.length) % texts_10.length;
+  texts_10[j].classList.remove('hide');
+});
