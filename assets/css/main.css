@@ -176,7 +176,7 @@ html{
 .dot {
   width: 16px;
   height: 16px;
-  background: #45454578;
+  background: #eb9b9b78;
   border-radius: 50%;
   transition: all 0.4s linear;
 }
@@ -209,4 +209,90 @@ html{
   }
 
 
+}
+@media screen and (max-width: 1000px) {
+  html{
+    height: 100wh;
+  }
+  .item-0 {
+    background-image: url("../media/blog/01.06.2024/background.jpg");
+    /* background-color: black; */
+    background-repeat: repeat;
+  }
+  .item-0{  
+    .about{
+      display: flex;
+      flex-direction: column;
+      justify-items: flex-start;
+      justify-content: space-between;
+      position:absolute;
+      margin: 5px;
+    }
+    .about img{
+      width: 100%;
+    }
+  }
+  .text-holder{
+    margin: 5px 17px;
+    h1{
+      padding-top: 20px;
+      color: white;
+      font-size: 32px;
+      font-weight: 900;
+      width: 90%;
+
+    }
+    p{
+      font-size: 14px;
+      font-weight: 600;
+      color: white;
+      line-height: 20px;
+      width: 90%;
+      text-align: justify;
+    }
+  }
+  .btn-svg{
+    width: 40px;
+  }
+  .directional_nav .previous_btn{
+    left: 4vw;
+    top: 50vh;
+    background-color: rgba(17, 17, 17, 0.966);
+    border-radius: 40px;
+    width: 40px;
+    height: 40px;
+  }
+  .directional_nav .next_btn{
+    width: 40px;
+    height: 40px;
+    right: 5vw;
+    top: 50vh;
+    background-color: rgba(17, 17, 17, 0.966);
+    border-radius: 40px;
+  }
+  .about-img-1{
+    width: 170px !important;
+    justify-content: end;
+  }
+  .about-img-2{
+    width: 230px !important;
+    justify-content: end;
+  }
+  .text-body{
+    height: 80vh;
+    width: 75vw;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.679) 100%, rgba(255, 255, 255, 0.334) 90%)  ;
+    position: absolute;
+    border: solid 2px white;
+    box-shadow: -10px 20px 30px rgba(0,0,0,.6);
+    top: 10vh;
+    right: 9vw;
+  }
+  .dot {
+    width: 16px;
+    height: 16px;
+    background: #1c1c1cb9;
+    border-radius: 50%;
+    transition: all 0.4s linear;
+  }
 }

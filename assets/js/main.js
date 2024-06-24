@@ -13,6 +13,21 @@ document.querySelector('.previous_btn').addEventListener('click', function () {
   items[currentIndex].classList.remove('hide');
 });
 
+// item 0
+const texts_0 = document.querySelectorAll('.texts_0 > div');
+let z = 0;
+console.log(z , texts_0)
+document.querySelector('.n_btn_0').addEventListener('click', function () {
+  texts_0[z].classList.add('hide');
+  z = (z + 1) % texts_0.length;
+  texts_0[z].classList.remove('hide');
+});
+
+document.querySelector('.p_btn_0').addEventListener('click', function () {
+  texts_0[z].classList.add('hide');
+  z = (z - 1 + texts_0.length) % texts_0.length;
+  texts_0[z].classList.remove('hide');
+});
 // item 1
 const texts_1 = document.querySelectorAll('.texts_1 > p');
 let a = 0;
