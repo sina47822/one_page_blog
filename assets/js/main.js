@@ -186,3 +186,60 @@ document.querySelector('.p_btn_10').addEventListener('click', function () {
   j = (j - 1 + texts_10.length) % texts_10.length;
   texts_10[j].classList.remove('hide');
 });
+
+
+const pageHeight = document.body.clientHeight;
+const pageWidth = document.body.clientWidth;
+console.log(pageHeight)
+console.log(pageWidth)
+
+
+function debounce(func, wait) {
+  let timeout;
+  return function(...args) {
+    const context = this;
+    clearTimeout(timeout);
+    timeout = setTimeout(() => func.apply(context, args), wait);
+  };
+}
+
+// Select all SVG elements with the class 'btn-svg'
+var mySVGs = document.querySelectorAll('.btn-svg');
+// Select all elements with the class 'menu-item'
+var menuItems = document.querySelectorAll('.menu-item');
+// Select the element with the class 'menu-bar'
+var menuBar = document.querySelector('.menu-bar');
+
+// Assuming pageWidth is defined elsewhere
+if (pageWidth < 900) {
+  // Adjust the viewBox attribute for each SVG
+  mySVGs.forEach(function(mySVG) {
+    mySVG.setAttribute("viewBox", "-11 8 65 66");
+  });
+
+  // Show the menu bar
+  menuBar.classList.remove('hide');
+  // Hide each menu item
+  menuItems.forEach(function(menuItem) {
+    menuItem.classList.add('hide');
+  });
+
+  // Debounced event handlers
+  const handleMouseOver = debounce(function() {
+    menuBar.classList.add('hide');
+    menuItems.forEach(function(menuItem) {
+      menuItem.classList.remove('hide');
+    });
+  }, 200); // Adjust the debounce delay as needed
+
+  const handleMouseOut = debounce(function() {
+    menuBar.classList.remove('hide');
+    menuItems.forEach(function(menuItem) {
+      menuItem.classList.add('hide');
+    });
+  }, 3000); // Adjust the debounce delay as needed
+
+  // Add mouseover and mouseout event listeners with debounce
+  menuBar.addEventListener('mouseover', handleMouseOver);
+  menuBar.addEventListener('mouseout', handleMouseOut);
+}
