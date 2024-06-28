@@ -176,26 +176,25 @@ document.querySelector('.p_btn_10').addEventListener('click', function () {
   j = (j - 1 + texts_10.length) % texts_10.length;
   texts_10[j].classList.remove('hide');
 });
-
-window.addEventListener("resize", function(event) {
+function ChangeWidth(event) {
   var pageWidth = document.documentElement.clientWidth;
   var pageHeight = document.documentElement.clientHeight;
 
-function debounce(func, wait) {
-  let timeout;
-  return function(...args) {
-    const context = this;
-    clearTimeout(timeout);
-    timeout = setTimeout(() => func.apply(context, args), wait);
-  };
-}
+  function debounce(func, wait) {
+    let timeout;
+    return function(...args) {
+      const context = this;
+      clearTimeout(timeout);
+      timeout = setTimeout(() => func.apply(context, args), wait);
+    };
+  }
 
-// Select all SVG elements with the class 'btn-svg'
-var mySVGs = document.querySelectorAll('.btn-svg');
-// Select all elements with the class 'menu-item'
-var menuItems = document.querySelectorAll('.menu-item');
-// Select the element with the class 'menu-bar'
-var menuBar = document.querySelector('.menu-bar');
+  // Select all SVG elements with the class 'btn-svg'
+  var mySVGs = document.querySelectorAll('.btn-svg');
+  // Select all elements with the class 'menu-item'
+  var menuItems = document.querySelectorAll('.menu-item');
+  // Select the element with the class 'menu-bar'
+  var menuBar = document.querySelector('.menu-bar');
 
   // Assuming pageWidth is defined elsewhere
   if (pageWidth < 900) {
@@ -242,7 +241,11 @@ var menuBar = document.querySelector('.menu-bar');
       menuItem.classList.remove('hide');
     });
   }
-})
+}
+
+window.addEventListener("DOMContentLoaded", ChangeWidth)
+window.addEventListener("resize", ChangeWidth)
+
 
 var about = document.querySelector('#about').addEventListener('click',function(){
   const itemlist = document.querySelectorAll('.fullscreen-bg > div');
