@@ -161,21 +161,7 @@ document.querySelector('.p_btn_9').addEventListener('click', function () {
   texts_9[i].classList.remove('hide');
 });
 
-// item 10
-const texts_10 = document.querySelectorAll('.texts_10 > p');
-let j = 0;
-console.log(j , texts_10)
-document.querySelector('.n_btn_10').addEventListener('click', function () {
-  texts_10[j].classList.add('hide');
-  j = (j + 1) % texts_10.length;
-  texts_10[j].classList.remove('hide');
-});
 
-document.querySelector('.p_btn_10').addEventListener('click', function () {
-  texts_10[j].classList.add('hide');
-  j = (j - 1 + texts_10.length) % texts_10.length;
-  texts_10[j].classList.remove('hide');
-});
 function ChangeWidth(event) {
   var pageWidth = document.documentElement.clientWidth;
   var pageHeight = document.documentElement.clientHeight;
@@ -298,31 +284,24 @@ var bees_1 = document.querySelector('#bees_1').addEventListener('click',function
   })
   document.querySelector('.item-6').classList.remove('hide');
 });
-var bees_2 = document.querySelector('#bees_2').addEventListener('click',function(){
+var Underwater = document.querySelector('#Underwater').addEventListener('click',function(){
   const itemlist = document.querySelectorAll('.fullscreen-bg > div');
   itemlist.forEach(function(item){
     item.classList.add('hide');
   })
   document.querySelector('.item-7').classList.remove('hide');
 });
-var Underwater = document.querySelector('#Underwater').addEventListener('click',function(){
+var Plant_extinction = document.querySelector('#Plant_extinction').addEventListener('click',function(){
   const itemlist = document.querySelectorAll('.fullscreen-bg > div');
   itemlist.forEach(function(item){
     item.classList.add('hide');
   })
   document.querySelector('.item-8').classList.remove('hide');
 });
-var Plant_extinction = document.querySelector('#Plant_extinction').addEventListener('click',function(){
-  const itemlist = document.querySelectorAll('.fullscreen-bg > div');
-  itemlist.forEach(function(item){
-    item.classList.add('hide');
-  })
-  document.querySelector('.item-9').classList.remove('hide');
-});
 var What_can_we_do = document.querySelector('#What_can_we_do').addEventListener('click',function(){
   const itemlist = document.querySelectorAll('.fullscreen-bg > div');
   itemlist.forEach(function(item){
     item.classList.add('hide');
   })
-  document.querySelector('.item-10').classList.remove('hide');
+  document.querySelector('.item-9').classList.remove('hide');
 });
