@@ -114,15 +114,8 @@ a{
   position: relative;
 
 }
+
 .item-7 {
-  height: 100vh;
-  background-image: url("../media/blog/01.06.2024/IMG_1192.JPG");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-.item-8 {
   height: 100vh;
   background-image: url("../media/blog/01.06.2024/IMG_1197.JPG");
   background-position: center;
@@ -131,7 +124,7 @@ a{
   position: relative;
 
 }
-.item-9 {
+.item-8 {
   height: 100vh;
   background-image: url("../media/blog/01.06.2024/IMG_1195.JPG");
   background-position: center;
@@ -140,7 +133,7 @@ a{
   position: relative;
 
 }
-.item-10 {
+.item-9 {
   height: 100vh;
   background-image: url("../media/blog/01.06.2024/IMG_1193.JPG");
   background-position: center;
