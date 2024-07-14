@@ -44,6 +44,8 @@ table {
 
 html{
   height: 100vh;
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 a{
