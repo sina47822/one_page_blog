@@ -191,7 +191,7 @@ a{
   width: 400px !important;
 }
 .item-0 .about-img-2{
-  width: 630px !important;
+  width: 430px !important;
 }
 .menu{
   position:absolute;
@@ -286,26 +286,6 @@ a{
   .item-0 .about img{
     width: 100%;
   }
-  .text-holder{
-    margin: 5px 17px;
-
-  }
-  .text-holder h1{
-    padding-top: 20px;
-    color: white;
-    font-size: 32px;
-    font-weight: 900;
-    width: 90%;
-
-  }
-  .text-holder p{
-    font-size: 14px;
-    font-weight: 600;
-    color: white;
-    line-height: 20px;
-    width: 90%;
-    text-align: justify;
-  }
   .btn-svg{
     width: 40px;
   }
@@ -325,14 +305,6 @@ a{
     background-color: rgba(17, 17, 17, 0.966);
     border-radius: 40px;
   }
-  .about-img-1{
-    width: 170px !important;
-    justify-content: end;
-  }
-  .about-img-2{
-    width: 230px !important;
-    justify-content: end;
-  }
   .text-body{
     height: 80vh;
     width: 75vw;
@@ -344,14 +316,39 @@ a{
     right: 9vw;
     overflow: hidden;
   }
-  .dot {
-    width: 16px;
-    height: 16px;
-    background: #1c1c1cb9;
-    border-radius: 50%;
-    transition: all 0.4s linear;
+  .text-holder{
+    margin: 5px 17px;
+    width: 100%;
+    height: 60vh;
+    overflow-y: auto;
+    overflow-x: auto;
+
   }
 
+  .text-holder h1{
+    padding-top: 20px;
+    color: white;
+    font-size: 32px;
+    font-weight: 900;
+    width: 90%;
+
+  }
+  .text-holder p{
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    line-height: 20px;
+    width: 90%;
+    text-align: justify;
+  }
+  .item-0 .about-img-1{
+    width: 90% !important;
+    justify-content: end;
+  }
+  .item-0 .about-img-2{
+    width: 90% !important;
+    justify-content: end;
+  }
   .menu{
     position:absolute;
     top: 5vh;
