@@ -226,7 +226,6 @@ a{
   .menu{
     position:absolute;
     top: 5vh;
-    left:5vw;
     z-index: 10;
     list-style-type:none;
     display: flex;
@@ -387,7 +386,6 @@ a{
   .menu{
     position:absolute;
     top: 5vh;
-    left:5vw;
     z-index: 10;
     list-style-type:none;
     display: flex;
